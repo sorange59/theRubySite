@@ -1,0 +1,31 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+header {
+    background-color: #23194A; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 1% 1%; /* Padding inside the header */
+    text-align: center; /* Center align text */
+}
+
+nav {
+    display: flex; /* Flexbox layout for navigation items */
+    justify-content: center; /* Center align navigation items */
+}
+
+nav a {
+    color: #fff; /* White text color for links */
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 5%; /* Padding around each link */
+    margin: 0 10px; /* Margin between links */
+    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+    border-radius: 12px;
+}
+
+nav a:hover {
+    background-color: #23222F;
+    border-radius: 12px;
+    /* Darker background color on hover */
+}

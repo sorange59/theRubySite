@@ -1,4 +1,3 @@
-<!-- app/views/users/new.html.erb -->
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +9,7 @@
 <body>
   <div class="container">
     <h2>Sign Up</h2>
-    <%= form_with(model: User.new, url: signup_path, method: "post") do |f| %>
+    <%= form_with(model: User.new, url: "/signup", method: "post") do |f| %>
       <% if flash[:alert] %>
         <div class="alert alert-danger">
           <%= flash[:alert] %>

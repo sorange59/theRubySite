@@ -2,30 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 header {
-    background-color: #23194A; /* Dark background color */
+    background-color: #fa364b; /* Dark background color */
     color: #fff; /* White text color */
     padding: 1% 1%; /* Padding inside the header */
     text-align: center; /* Center align text */
+    max-height: 150px;
+
 }
 
 nav {
-    display: flex; /* Flexbox layout for navigation items */
-    justify-content: center; /* Center align navigation items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
 }
 
 nav a {
     color: #fff; /* White text color for links */
-    font-size: 150%;
+    font-size: 24px; /* Adjust font size */
     font-weight: bold;
     text-decoration: none; /* Remove underline from links */
-    padding: 10px 5%; /* Padding around each link */
-    margin: 0 10px; /* Margin between links */
+    padding: 10px 20px; /* Padding around each link */
+    margin: 1 1px; /* Margin between links */
     transition: background-color 0.4s ease; /* Smooth transition for hover effect */
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 nav a:hover {
-    background-color: #23222F;
-    border-radius: 12px;
+    background-color: #111;
+    border-radius: 20px;
     /* Darker background color on hover */
+}
+
+
+.forms {
+    text-align: right; /* Align content to the right */
+    margin-right: 5%; /* Margin on the right side */
+    font-size: 20px; /* Font size for text in forms */
+}
+
+
+.signUp, .logIn {
+    margin: 5px; /* Adjust margin to move buttons closer */
+    padding: 10px 20px; /* Adjust padding for button appearance */
+    border-radius: 20px; /* Rounded corners for buttons */
+    background-color: #fff; /* White background color */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Font size for button text */
+    margin-bottom: 10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+
+
+.signUp:hover, .logIn:hover {
+  background-color: #ddd; /* Hover state background color */
 }

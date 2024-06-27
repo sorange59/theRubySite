@@ -1,3 +1,122 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-color: #EBEBEB;
+    font-family: Apple Chancery;
+}
+.container{
+
+
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #C0C0C0;
+    padding: 35px;
+    width: 50vh;
+    margin: 5%;
+    margin-left:36%;
+
+}
+
+.hh2 {
+    font-size: 30px;
+    margin-top: 15px; /* Remove default margin */
+    text-align: center; /* Center text horizontally */
+    position: absolute;
+    top: 90px;
+    //margin: 10px;
+    //background-color: White;
+    border-radius: 15px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Apple Chancery, cursive;
+}
+
+.form-group{
+    padding: 10px;
+    font-size:20px;
+    margin: 7px;
+    margin-top: 10px;
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.formUser{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    width: auto;
+}
+.formPass{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+}
+
+
+
+
+.paths{
+    flex: 1;
+    justify-content: space-evenly;
+
+    height: 25px;
+
+}
+.signUp{
+}
+
+.upSign{
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}
+
+.new {
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 4%;
+    color: #333; /* Dark text color */
+    margin-bottom: 480px;
+    left: 112vh;
+    transform: translateX(-50%);
+    text-decoration: none; /* Remove underline from links */
+    display: flex;
+}
+
+.logbutt{
+    margin: 15px; /* Adjust margin to move buttons closer */
+    padding: 3px 12px; /* Adjust padding for button appearance */
+    border-radius: 10px; /* Rounded corners for buttons */
+    background-color: #fff; /* White background color */
+    color: #333; /* Dark text color */
+    font-size: 15px; /* Font size for button text */
+    text-decoration: none; /* Remove underline from links */
+    display: flex;
+    width: 75%
+}
+
+
+
+.actions {
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make the button a block element */
+  margin: 10px auto; /* Center the button horizontally */
+  justify-content: center; /* Center the button horizontally */
+
+}

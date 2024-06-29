@@ -6,27 +6,47 @@ header {
     color: #fff; /* White text color */
     padding: 1% 1%; /* Padding inside the header */
     text-align: center; /* Center align text */
-    max-height: 150px;
+    border-radius: 15px;
+
+
 
 }
+.hh2{
+    text-align: center; /* Center align text */
+    margin-top: 15px;
+    font-size: 5vh;
+    margin-bottom: 5px;
+}
 
-nav {
+.topButts{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-
-}
-
-nav a {
+    justify-content: space-evenly;
     color: #fff; /* White text color for links */
     font-size: 24px; /* Adjust font size */
     font-weight: bold;
     text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Padding around each link */
-    margin: 1 1px; /* Margin between links */
+    padding: 5px 20px; /* Padding around each link */
     transition: background-color 0.4s ease; /* Smooth transition for hover effect */
     border-radius: 15px;
+
+
+
+
+
+}
+
+.topNames{
+    color: #fff; /* White text color for links */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Padding around each link */
+    //margin-bottom: 15px; /* Margin between links */
+    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+    border-radius: 15px;
+    height: 30px;
+
+    width: 13%;
 }
 
 nav a:hover {
@@ -37,24 +57,53 @@ nav a:hover {
 
 
 .forms {
-    text-align: right; /* Align content to the right */
-    margin-right: 5%; /* Margin on the right side */
-    font-size: 20px; /* Font size for text in forms */
+
+    margin: 0px 30px 0px 0;
+    display: flex;
+    justify-content: right;
+
+}
+@media (min-width: 750px) {
+    .forms{
+        z-index: 1;
+        position: relative;
+        top: -5px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .hh2{
+        font-size: 30px;
+        }
+    .signUp, .logIn{
+        padding: 5px 10px;
+        font-size: 10px;
+
+
+        }
+
+
+
 }
 
 
 .signUp, .logIn {
-    margin: 5px; /* Adjust margin to move buttons closer */
     padding: 10px 20px; /* Adjust padding for button appearance */
     border-radius: 20px; /* Rounded corners for buttons */
     background-color: #fff; /* White background color */
     color: #333; /* Dark text color */
-    font-size: 16px; /* Font size for button text */
-    margin-bottom: 10px;
+    font-size: 20px; /* Font size for button text */
     text-decoration: none; /* Remove underline from links */
+    justify-items: end; /* Add this line */
+    position: relative;
+
+
 }
 
-
+.logIn{
+    margin-left: 12px;
+}
 
 .signUp:hover, .logIn:hover {
   background-color: #ddd; /* Hover state background color */

@@ -13,12 +13,12 @@
 <body>
     <header>
 
-        <h1 class="userWelcome">Welcome, <%= @user.username %> </h1>
+        <h1 class="userWelcome">Welcome, <%= @user.username %>!</h1>
 
 
 
         <nav class="topButts">
-            <a class="topNames" href="/users/@id">Home</a>
+            <a class="topNames" href="/home">Home</a>
             <a class="topNames" href="/blog">Blog</a>
             <a class="topNames" href="/pictures">Pictures</a>
             <a class="topNames" href="/profile">Profile</a>
@@ -33,7 +33,7 @@
     </main>
 
     <footer>
-        <p>Signed in as, <%= @user.username %></p>
+        <p><%= @user.username %></p>
     </footer>
 </body>
 

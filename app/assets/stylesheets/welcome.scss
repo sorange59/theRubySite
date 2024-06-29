@@ -7,15 +7,17 @@ header {
     padding: 1% 1%; /* Padding inside the header */
     text-align: center; /* Center align text */
     border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
 
 
 
 }
 .hh2{
     text-align: center; /* Center align text */
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 5vh;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .topButts{
@@ -57,12 +59,14 @@ nav a:hover {
 
 
 .forms {
-
-    margin: 0px 30px 0px 0;
     display: flex;
     justify-content: right;
-
+    margin: 0 auto;
+    width: 25%; /* Match the width of the header */
+    left: 60vh;
+    transform: translateY(-100px); /* Move the element up by 30px */
 }
+
 @media (min-width: 750px) {
     .forms{
         z-index: 1;
@@ -88,17 +92,15 @@ nav a:hover {
 }
 
 
-.signUp, .logIn {
+.signUp,.logIn {
     padding: 10px 20px; /* Adjust padding for button appearance */
     border-radius: 20px; /* Rounded corners for buttons */
-    background-color: #fff; /* White background color */
+    background-color: #C0C0C0; /* White background color */
     color: #333; /* Dark text color */
     font-size: 20px; /* Font size for button text */
     text-decoration: none; /* Remove underline from links */
     justify-items: end; /* Add this line */
     position: relative;
-
-
 }
 
 .logIn{

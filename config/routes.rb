@@ -5,6 +5,12 @@ Rails.application.routes.draw do
 
   root controller: :welcome, action: :index
 
+  get '/about', to: 'about#about'
+  get '/contact', to: 'contact#contact'
+  get '/services', to: 'services#services'
+
+
+
   get '/login', to: 'sessions#login'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
@@ -14,4 +20,5 @@ Rails.application.routes.draw do
 
   get '/users/:id', to: 'users#show', as: 'id'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
 end

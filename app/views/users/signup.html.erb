@@ -4,39 +4,47 @@
 <head>
   <title>Sign Up</title>
   <%= csrf_meta_tags %> <!-- Rails CSRF protection -->
-  <%= stylesheet_link_tag 'sessions', media: 'all' %> <!-- Include application-wide styles -->
+  <%= stylesheet_link_tag 'users', media: 'all' %> <!-- Include application-wide styles -->
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' %>
+
 </head>
 <body>
 
-  <div class="paths">
-    <a class="signUp" href="/login">Already Have an Account? Log In</a>
-    <a class="signUp" href="/">Go Home</a>
-  </div>
 
 
   <div class="container">
     <h2 class="hh2">Sign Up</h2>
+
     <%= form_with(model: User.new, url: "/signup", method: "post") do |f| %>
       <% if flash[:alert] %>
-        <div class="alert alert-danger">
+        <div class="alert-danger">
           <%= flash[:alert] %>
         </div>
       <% end %>
+
       <div class="form-group">
-        <%= f.label :username %>
-        <%= f.text_field :username, class: 'form-control', required: true %>
+        <span><i class="fa fa-user"></i></span>
+        <%= f.text_field :username, class: 'formUser', required: true, placeholder: "Username" %>
       </div>
+
       <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, class: 'form-control', required: true %>
+        <span><i class="fa fa-lock"></i></span>
+        <%= f.password_field :password, class: 'formPass', required: true, placeholder: "Password" %>
       </div>
+
       <div class="form-group">
-        <%= f.label :password_confirmation %>
-        <%= f.password_field :password_confirmation, class: 'form-control', required: true %>
+        <span><i class="fa fa-check"></i></span>
+        <%= f.password_field :password_confirmation, class: 'formPass', required: true, placeholder: "Password" %>
       </div>
+
       <div class="actions">
-        <%= f.submit 'Sign Up', class: 'btn btn-primary' %>
+        <%= f.submit 'Sign Up', class: 'upSign' %>
       </div>
+
+       <div class="upSign">
+    <a class="new" href="/login">Already Have an Account? Log In</a>
+  </div>
+
     <% end %>
   </div>
 </body>

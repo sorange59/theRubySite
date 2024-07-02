@@ -63,8 +63,8 @@ nav a:hover {
     justify-content: right;
     margin: 0 auto;
     width: 25%; /* Match the width of the header */
-    left: 60vh;
-    transform: translateY(-100px); /* Move the element up by 30px */
+    left: 33vh;
+    transform: translateY(-145px); /* Move the element up by 30px */
 }
 
 @media (min-width: 750px) {
@@ -97,7 +97,7 @@ nav a:hover {
     border-radius: 20px; /* Rounded corners for buttons */
     background-color: #C0C0C0; /* White background color */
     color: #333; /* Dark text color */
-    font-size: 20px; /* Font size for button text */
+    font-size: 15px; /* Font size for button text */
     text-decoration: none; /* Remove underline from links */
     justify-items: end; /* Add this line */
     position: relative;

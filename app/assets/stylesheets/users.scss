@@ -26,7 +26,7 @@ body{
     margin-top: 15px; /* Remove default margin */
     text-align: center; /* Center text horizontally */
     position: absolute;
-    top: 90px;
+    top: 120px;
     border-radius: 15px;
     padding: 5px;
     left: 50%;
@@ -108,8 +108,8 @@ body{
 .actions {
   text-decoration: none; /* Remove underline from links */
   display: block; /* Make the button a block element */
-  margin-left: 35px;
-        transform: translateY(-10px); /* Move the element up by 30px */
-        width: 100%;
+  margin-left: 40%;
+        transform: translateY(-5px); /* Move the element up by 30px */
+        width: 110%;
 
 }

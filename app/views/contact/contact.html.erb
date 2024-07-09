@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%= stylesheet_link_tag "welcome" %>
+<%= stylesheet_link_tag "contact" %>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 
         <h1 class="hh2" >Contact us Here!</h1>
 
-        <div class="forms">
+        <div class="butTop">
             <a class="signUp" href="/signup">Sign Up</a>
             <a class="logIn" href="/login">Log In</a>
         </div>
@@ -26,6 +26,47 @@
 
 
     </header>
+
+
+
+
+<form class="form">
+    <h2> Leave Us a Message! </h2>
+
+    <div class="flex">
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>first name</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>last name</span>
+        </label>
+    </div>
+
+    <label>
+        <input required="" placeholder="" type="email" class="input">
+        <span>email</span>
+    </label>
+
+    <label>
+        <input required="" type="tel" placeholder="" class="input">
+        <span>contact number</span>
+    </label>
+    <label>
+        <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+        <span>message</span>
+    </label>
+
+    <button class="fancy" href="#">
+      <span class="top-key"></span>
+      <span class="text">submit</span>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+</form>
+
 
     <main>
         <p>Contact Us via:</p>

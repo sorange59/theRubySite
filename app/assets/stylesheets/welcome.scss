@@ -63,8 +63,8 @@ nav a:hover {
     justify-content: right;
     margin: 0 auto;
     width: 25%; /* Match the width of the header */
-    left: 33vh;
-    transform: translateY(-145px); /* Move the element up by 30px */
+    left: 25vh;
+    transform: translateY(-155px); /* Move the element up by 30px */
 }
 
 @media (min-width: 750px) {
@@ -110,3 +110,22 @@ nav a:hover {
 .signUp:hover, .logIn:hover {
   background-color: #ddd; /* Hover state background color */
 }
+
+
+.pgaph{
+    background-color: red;
+
+
+}
+
+.foot{
+    background-color: grey;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+
+

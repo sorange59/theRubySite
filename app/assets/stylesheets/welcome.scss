@@ -2,24 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 header {
-    background-color: #fa364b; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 1% 1%; /* Padding inside the header */
+    background-color: #242425; /* Dark background color */
+    color: #4d1089; /* White text color */
     text-align: center; /* Center align text */
-    border-radius: 15px;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    max-height: 40%;
+    height: 110%;
+    border-bottom: 2px solid grey;
+    display: flex;
+    padding: 20px;
+
+
+}
+.header-content{
+    flex: 1;
+    text-align: left;
+
 
 
 
 }
 .hh2{
-    text-align: center; /* Center align text */
-    margin-top: 10px;
-    font-size: 5vh;
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin-top: 25px;
+    letter-spacing: 3px;
+    margin-left: -15px;
 }
 
+.imgPrint {
+    max-width: 70px;
+    margin-right: 20px;
+    height: 15%;
+    padding: 10px;
+
+
+
+
+}
+
+.hh1{
+    letter-spacing: 3px;
+
+
+
+}
 .topButts{
     display: flex;
     justify-content: space-evenly;
@@ -43,7 +71,7 @@ header {
     font-weight: bold;
     text-decoration: none; /* Remove underline from links */
     padding: 10px; /* Padding around each link */
-    //margin-bottom: 15px; /* Margin between links */
+    margin-bottom: 15px; /* Margin between links */
     transition: background-color 0.4s ease; /* Smooth transition for hover effect */
     border-radius: 15px;
     height: 30px;
@@ -51,81 +79,81 @@ header {
     width: 13%;
 }
 
-nav a:hover {
-    background-color: #111;
-    border-radius: 20px;
-    /* Darker background color on hover */
-}
+//nav a:hover {
+    //background-color: #111;
+    //border-radius: 20px;
+    ///* Darker background color on hover */
+//}
 
 
-.forms {
-    display: flex;
-    justify-content: right;
-    margin: 0 auto;
-    width: 25%; /* Match the width of the header */
-    left: 25vh;
-    transform: translateY(-155px); /* Move the element up by 30px */
-}
+//.forms {
+    //display: flex;
+    //justify-content: right;
+    //margin: 0 auto;
+    //width: 25%; /* Match the width of the header */
+    //left: 25vh;
+    //transform: translateY(-155px); /* Move the element up by 30px */
+//}
 
-@media (min-width: 750px) {
-    .forms{
-        z-index: 1;
-        position: relative;
-        top: -5px;
-    }
+//@media (min-width: 750px) {
+    //.forms{
+        //z-index: 1;
+        //position: relative;
+        //top: -5px;
+    //}
 
-}
+//}
 
-@media (max-width: 750px) {
-    .hh2{
-        font-size: 30px;
-        }
-    .signUp, .logIn{
-        padding: 5px 10px;
-        font-size: 10px;
-
-
-        }
+//@media (max-width: 750px) {
+    //.hh2{
+        //font-size: 30px;
+        //}
+    //.signUp, .logIn{
+        //padding: 5px 10px;
+        //font-size: 10px;
 
 
-
-}
-
-
-.signUp,.logIn {
-    padding: 10px 20px; /* Adjust padding for button appearance */
-    border-radius: 20px; /* Rounded corners for buttons */
-    background-color: #C0C0C0; /* White background color */
-    color: #333; /* Dark text color */
-    font-size: 15px; /* Font size for button text */
-    text-decoration: none; /* Remove underline from links */
-    justify-items: end; /* Add this line */
-    position: relative;
-}
-
-.logIn{
-    margin-left: 12px;
-}
-
-.signUp:hover, .logIn:hover {
-  background-color: #ddd; /* Hover state background color */
-}
+        //}
 
 
-.pgaph{
-    background-color: red;
+
+//}
 
 
-}
+//.signUp,.logIn {
+    //padding: 10px 20px; /* Adjust padding for button appearance */
+    //border-radius: 20px; /* Rounded corners for buttons */
+    //background-color: #C0C0C0; /* White background color */
+    //color: #333; /* Dark text color */
+    //font-size: 15px; /* Font size for button text */
+    //text-decoration: none; /* Remove underline from links */
+    //justify-items: end; /* Add this line */
+    //position: relative;
+//}
 
-.foot{
-    background-color: grey;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
+//.logIn{
+    //margin-left: 12px;
+//}
+
+//.signUp:hover, .logIn:hover {
+  //background-color: #ddd; /* Hover state background color */
+//}
 
 
-}
+//.pgaph{
+    //background-color: red;
+
+
+//}
+
+//.foot{
+    //background-color: grey;
+    //align-items: center;
+    //padding: 10px;
+    //margin: 10px;
+
+
+//}
 
 
 

@@ -1,166 +1,264 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+    height: 100%;
+}
+
+/* Header Styles */
+
 header {
     background-color: #100C08; /* Dark background color */
     color: #8300e5; /* White text color */
     display: flex;
-    padding: 20px;
-    max-height: 100px;
-
-
+    align-items: center;
+    align-content: center;
+    padding: 10px; /* Reduced padding */
+    max-height: 70px; /* Reduced max height */
 }
-.header-content{
+
+.header-content {
     flex: 1;
     text-align: center;
-
-
-
-
+    flex-direction: column; /* Added for mobile responsiveness */
 }
-.hh2{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-     margin-top: 10px;
+
+.hh2 {
+    font-size: 24px; /* Reduced font size */
+    margin-top: 5px; /* Reduced margin top */
     letter-spacing: 3px;
-    margin-left: -25px;
+    margin-left: -10px; /* Reduced margin left */
 }
 
 .imgPrint {
-    max-width: 70px;
-    margin-right: 20px;
-    padding: 10px;
+    max-width: 50px; /* Reduced max width */
+    margin-right: 10px; /* Reduced margin right */
+    padding: 5px; /* Reduced padding */
     height: 5%;
-
-
-
-
 }
 
-.hh1{
+.hh1 {
     letter-spacing: 3px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
+    font-size: 28px; /* Reduced font size */
     color: #8300e5;
     background-color: grey;
     width: 50%;
     margin-left: 25%;
     border-radius: 10px;
-    
-
-
-
-}
-.topButts{
-     display: flex;
-     color: #fff; /* White text color for links */
-    font-size: 24px; /* Adjust font size */
-     font-weight: bold;
-     text-decoration: none; /* Remove underline from links */
-     padding: 10px 10px; /* Padding around each link */
-    transition: background-color 1s ease; /* Smooth transition for hover effect */
-    border-radius: 15px;
-    margin: 10px;
-    margin-left: 250px;
-    width: 100%;
-    margin-top: 15px;
-    
-   
 }
 
-.topNames{
+.topButts {
+    display: flex;
+    justify-content: flex-end; /* Add this to space out the buttons evenly */
+    flex-wrap: wrap; /* Add this to wrap the buttons to the next line if necessary */
     color: #fff; /* White text color for links */
-    font-size: 30px; /* Adjust font size */
     font-weight: bold;
     text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Padding around each link */
-    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
-    border-radius: 15px;
-    height: 30px;
-    margin-left: 20px;
+    padding: 5px 5px; /* Reduced padding */
+    transition: background-color 1s ease; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Reduced border radius */
+    margin:  5px 5px; /* Reduced margin */
+    align-items: center;
+    width: 30%; /* Make the buttons take up the full width */
+    margin-top: 5px; /* Reduced margin top */
+}
 
+.topNames {
+    flex: 0 0 20%; /* Make each button take up 20% of the width */
+    color: #fff; /* White text color for links */
+    font-size: 17px; /* Reduced font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 5px; /* Reduced padding */
+    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Reduced border radius */
+    height: 35px;
+    margin-left: 20px; /* Reduced margin left to 5px */
+    text-align: center; /* Center the text within each button */
+    
 }
 
 nav a:hover {
     background-color: #8300e5;
-    border-radius: 20px;
-    //* Darker background color on hover */
+    border-radius: 15px; /* Reduced border radius */
+    /* Darker background color on hover */
 }
-
 
 .forms {
     display: flex;
     justify-content: right;
-    margin: 10px 65%;
+    margin: 5px 50%; /* Reduced margin */
     width: 25%; /* Match the width of the header */
-    transform: translateY(-175px); /* Move the element up by 30px */
+    transform: translateY(-120px); /* Reduced transform */
 }
 
-@media (min-width: 750px) {
-    .forms{
-        z-index: 1;
-        position: relative;
-        top: -5px;
+/* Dropdown Menu Styles */
+
+.drpNames{
+    color: #000; /* White text color for links */
+    font-size: 10px; /* Reduced font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    padding: 2px;
+    margin: auto;/* Reduced padding */
+    transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+    border-radius: 10px; /* Reduced border radius */
+    height: 25px;
+    margin-left: 70px; /* Reduced margin left */
+    cursor: pointer;
+    
+    
+    
+}
+
+
+.dropbtn {
+    position: absolute;
+    right: 25px;
+    transform: translateY(-50%);
+    float: right;
+    cursor: pointer;
+    
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* Position the dropdown content to the right of the screen */
+    top: 50%; /* Position the dropdown content 50% from the top of the screen */
+    transform: translateY(-50%); /* Center the dropdown content vertically */
+    background-color: #8300e5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    border-radius: 10px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+@media (min-width: 800px) /*a minimum size does this:*/ {
+    // .forms {
+    //     z-index: 1;
+    //     position: relative;
+    //     top: -5px;
+    // }
+    // .topButts {
+    //     margin-left: -45px;
+    // }
+    .drpNames{
+        display: none;
+    }
+//     header{
+//         width: 100%;
+//         
+//     }
+//     .hh2{
+//         font-size: 15px;
+//         margin-left: 1px;
+//         
+//     }
+//         
+}
+
+
+
+
+@media (max-width: 800px)/* do this before the said size*/{
+    .hh2 {
+        font-size: 15px;
+        margin-left: 1px;
+    }
+    .signUp, .logIn {
+        padding: 5px 5px;
+        font-size: 5px;
+        display: none;
+    }
+    .topButts {
+        display: none; /* Hide top buttons on phone view */
+    }
+    .imgPrint{
+        max-width: 35px; /* Reduced max width */
+        margin-right: 10px; /* Reduced margin right */
+        padding: 3px; /* Reduced padding */
+        height: 4%;
+        
+    }
+    .header-content {
+        flex-direction: column;
+    }
+    .dropdown {
+            display: inline-block;
+    }
+    
+    .hh1{
+        font-size: 15px;
+        margin: 5px auto;
+        padding: 3px;
+        
+    }
+    .drpNames{
+        
     }
 
 }
 
-@media (max-width: 750px) {
-    .hh2{
-        font-size: 30px;
-        }
-    .signUp, .logIn{
-        padding: 5px 10px;
-        font-size: 10px;
-
-
-        }
 
 
 
-}
 
 
 .signUp,.logIn {
-    padding: 10px 10px; /* Adjust padding for button appearance */
-    border-radius: 20px; /* Rounded corners for buttons */
+    padding: 5px 5px; /* Reduced padding */
+    border-radius: 10px; /* Reduced border radius */
     background-color: #C0C0C0; /* White background color */
     color: #333; /* Dark text color */
-    font-size: 15px; /* Font size for button text */
+    font-size: 12px; /* Reduced font size */
     text-decoration: none; /* Remove underline from links */
 }
 
 .logIn{
-    margin-left: 12px;
+    margin-left: 10px; /* Reduced margin left */
 }
 
 .signUp:hover, .logIn:hover {
-  background-color: #ddd; /* Hover state background color */
+    background-color: #ddd; /* Hover state background color */
 }
-
-
 
 .bod{
     background-color: lightgrey;
-}
-.pgaph{
-    background-color: red;
-    max-height: 1000vh;
-    height: 1000px;
-
-
+    height: 100%;
 }
 
-//.foot{
-    //background-color: grey;
-    //align-items: center;
-    //padding: 10px;
-    //margin: 10px;
-
-
-//}
-
-
-
+// .pgaph{
+//     background-color: red;
+//     max-height: 100;
+//     
+// }

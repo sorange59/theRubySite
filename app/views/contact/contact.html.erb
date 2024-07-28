@@ -1,73 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<%= stylesheet_link_tag "contact" %>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Site</title>
-</head>
-
-<header>
-<%= image_tag 'print.png', alt: 'Print Image', class: 'imgPrint' %>
-    <h1 class="hh2">ECHELON SURVEILLANCE</h1>
-
-    <nav class="topButts">
-        <a class="topNames" href="/">Home</a>
-        <a class="topNames" href="/about">About</a>
-        <a class="topNames" href="/services">Services</a>
-        <a class="topNames" href="/contact">Contact</a>
-    </nav>
-</header>
-
-<body>
-
-<form class="form">
-    <h2> Leave Us a Message! </h2>
-
-    <div class="flex">
-        <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>first name</span>
-        </label>
-
-        <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>last name</span>
-        </label>
-    </div>
-
-    <label>
-        <input required="" placeholder="" type="email" class="input">
-        <span>email</span>
-    </label>
-
-    <label>
-        <input required="" type="tel" placeholder="" class="input">
-        <span>contact number</span>
-    </label>
-    <label>
-        <textarea required="" rows="3" placeholder="" class="input01"></textarea>
-        <span>message</span>
-    </label>
-
-    <button class="fancy" href="#">
-      <span class="top-key"></span>
-      <span class="text">submit</span>
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-    </button>
-</form>
+<% flash.each do |key, value| %>
+<div class="alert alert-<%= key %>">
+<%= value %>
+</div>
+<% end %>
 
 
-    <main>
-        <p>Contact Us via:</p>
-        <p>email@email.com </p>
-        <p>+1(123)456-7890</p>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-</body>
-
-</html>
+<%= form_with scope: :contact, url: contact_index_path, method: :post, local: true, class: "container" do |form| %>
+<div class="form-group">
+<%= form.label :name %>
+<%= form.text_field :name, class: "form-control" %>
+</div>
+<div class="form-group">
+<%= form.label :last_name %>
+<%= form.text_field :last_name, class: "form-control" %>
+</div>
+<div class="form-group">
+<%= form.label :email %>
+<%= form.email_field :email, class: "form-control" %>
+</div>
+<div class="form-group">
+<%= form.label :message %>
+<%= form.text_area :message, class: "form-control" %>
+</div>
+<%= form.submit "Submit", class: "btn btn-primary" %>
+<% end %>

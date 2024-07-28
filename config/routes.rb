@@ -6,10 +6,13 @@ Rails.application.routes.draw do
   root controller: :welcome, action: :index
 
   get '/about', to: 'about#about'
-  get '/contact', to: 'contact#contact'
+  
   get '/services', to: 'services#services'
 
-
+  get '/contact', to: "contact#contact"
+  resources :contact, only: %i[contact create]
+  
+  
 
   get '/login', to: 'sessions#login'
   post '/login', to: 'sessions#create'

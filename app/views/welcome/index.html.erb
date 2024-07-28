@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <%= stylesheet_link_tag "welcome" %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,23 @@
         <a class="topNames" href="/services">Services</a>
         <a class="topNames" href="/contact">Contact</a>
     </nav>
+    
+    <div class="dropdown">
+    <button class="drpNames dropbtn">Menu</button>
+        <ul class="dropMen">
+    <div class="dropdown-content">
+        <a href="/" class="topNames">Home</a>
+        <a href="/contact" class="topNames">Contact</a>
+        <a href="/about" class="topNames">About</a>
+        <a href="/services" class="topNames">Services</a>
+        <hr>
+    <a href="/login" class="topNames">Log In</a>
+    <a href="/signup" class="topNames">Sign Up</a>
+        </ul>
+        
+    </div>
+    </div>
+    
 </header>
 
 <body class="bod">

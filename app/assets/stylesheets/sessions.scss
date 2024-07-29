@@ -1,115 +1,138 @@
-// Place all the styles related to the Sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-body{
+body {
     background-color: #EBEBEB;
     font-family: Apple Chancery;
 }
-.container{
 
-
+.container {
     border-radius: 15px;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     background-color: #C0C0C0;
     padding: 35px;
     width: 50vh;
     margin: 5%;
-    margin-left:36%;
-
+    margin-left: 36%;
+    flex-direction: column; /* Add this to center content vertically */
+    box-shadow: 5px 5px 5px 5px grey;
 }
 
-.hh2 {
-    font-size: 30px;
-    margin-top: 15px; /* Remove default margin */
-    text-align: center; /* Center text horizontally */
-    position: absolute;
-    top: 90px;
-    border-radius: 15px;
+@media (max-width: 400px) {
+    .container {
+        background-color: #C0C0C0;
+        padding: 20px;
+        width: 40vh;
+        margin: 5%;
+        margin-left: 12%;
+        text-align: center;
+    }
+    
+    .formUser, .formPass {
+        display: inline-block;
+        margin: 5px auto;
+    }
+    
+    .fa {
+    }
+    
+    .input-group {
+        transform: translateY(5px);
+        margin: 1px auto;
+    }
+    
+    .new{
+        transform: translateY(50px);
+        
+        
+    }
+    
+    
+    
+}
+@media(min-width: 400px){
+    .dropbtn{
+     display: none;   
+    }
+    
+}
+
+
+
+
+// // // // // // // 
+
+.form-group {
     padding: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: Apple Chancery, cursive;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+    text-align: center; /* Add this to center input fields */
 }
 
-.form-group{
-    padding: 10px;
-    font-size:20px;
-    margin: 7px;
-    margin-top: 10px;
-    border-radius:20px;
-
-
-}
-
-
-.formUser{
+.formUser, .formPass {
     border-radius: 10px;
     font-size: 15px;
     padding: 10px;
     margin-top: 25px;
     width: auto;
-}
-.formPass{
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 10px;
-    width: auto;
+    display: inline-block; /* Add this to center input fields */
 }
 
-
-
-
-.paths{
+.paths {
     flex: 1;
     justify-content: space-evenly;
-
-
-}
-.signUp{
 }
 
-.upSign{
+.signUp {}
+
+.upSign {
     padding: 5px 10px;
     border-radius: 15px;
-
 }
 
 .new {
     background-color: #fff;
-    padding: 4px 8px;
+    padding: 2px 4px;
     border-radius: 15px;
-    font-size: 12px;
-    position: absolute;
-    bottom: 7%;
-    color: #333; /* Dark text color */
-    margin-bottom: 480px;
-    transform: translateX(-127%);
-
-    text-decoration: none; /* Remove underline from links */
+    font-size: 11px;
+    position: relative;
+    color: #333;
+    transform: translateY(-5%);
+    transform: translateX(10px);
+    text-decoration: none;
     display: flex;
 }
 
-.logbutt{
-    margin: 15px; /* Adjust margin to move buttons closer */
-    padding: 3px 12px; /* Adjust padding for button appearance */
-    border-radius: 10px; /* Rounded corners for buttons */
-    background-color: #fff; /* White background color */
-    color: #333; /* Dark text color */
-    font-size: 20px; /* Font size for button text */
-    text-decoration: none; /* Remove underline from links */
+.logbutt {
+    margin: 15px;
+    padding: 3px 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
     display: flex;
-    width: 75%
+    width: 75%;
+    justify-content: center; /* Add this to center button content */
 }
-
-
 
 .actions {
-  text-decoration: none; /* Remove underline from links */
-  display: block; /* Make the button a block element */
-  margin-left: 30px;
-        transform: translateY(-5px); /* Move the element up by 30px */
-        width: 100%;
+    text-decoration: none;
+    display: block;
+    margin-left: 30px;
+    transform: translateY(-5px);
+    width: 100%;
+    text-align: center; /* Add this to center action content */
+}
 
+.input-group {
+    display: flex;
+    justify-content: center; /* Add this to center input group content */
+    align-items: center;
+}
+
+.fa {
+    margin-right: 10px;
+    margin-top: 25px;
 }

@@ -21,20 +21,35 @@
     </nav>
     
     <div class="dropdown">
-    <button class="drpNames dropbtn">Menu</button>
-        <ul class="dropMen">
-    <div class="dropdown-content">
-        <a href="/" class="topNames">Home</a>
-        <a href="/contact" class="topNames">Contact</a>
-        <a href="/about" class="topNames">About</a>
-        <a href="/services" class="topNames">Services</a>
-        <hr>
-    <a href="/login" class="topNames">Log In</a>
-    <a href="/signup" class="topNames">Sign Up</a>
-        </ul>
-        
+        <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+            <div class="dropdown-content" id="dropdown-content">
+            <ul>
+            <li><a href="/" class="topDrop">Home</a></li>
+            <li><a href="/contact" class="topDrop">Contact</a></li>
+            <li><a href="/about" class="topDrop">About</a></li>
+            <li><a href="/services" class="topDrop">Services</a></li>
+         <hr>
+         <li><a href="/login" class="topDrop">Log In</a></li>
+          <li><a href="/signup" class="topDrop">Sign Up</a></li>
+         </ul>
+            </div>
     </div>
-    </div>
+    
+    <script>
+    function toggleDropdown() {
+        document.getElementById("dropdown-content").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown-content')) {
+            var dropdownContent = document.getElementById("dropdown-content");
+            if (dropdownContent.classList.contains('show')) {
+                dropdownContent.classList.remove('show');
+            }
+        }
+    });
+    </script>
     
 </header>
 

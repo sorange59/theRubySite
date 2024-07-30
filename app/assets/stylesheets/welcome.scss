@@ -22,6 +22,7 @@ header {
     align-content: center;
     padding: 10px; /* Reduced padding */
     max-height: 70px; /* Reduced max height */
+    width: 100%;
 }
 
 .header-content {
@@ -93,13 +94,14 @@ nav a:hover {
 }
 
 .forms {
-    display: flex;
-    justify-content: right;
-    margin: 5px 50%; /* Reduced margin */
-    width: 25%; /* Match the width of the header */
-    transform: translateY(-120px); /* Reduced transform */
+    position: absolute;
+    right: 100px;
+    justify-content: flex-end;
+    display: flex;    
+    transform: translateY(-350%);
+    margin: 5px;
+    width: 25%;
 }
-
 /* Dropdown Menu Styles */
 
 .drpNames{
@@ -223,6 +225,9 @@ ul {
     .drpNames{
         display: none;
     }
+    .dropbtn{
+        display: none;
+    }
 //     header{
 //         width: 100%;
 //         
@@ -285,10 +290,23 @@ ul {
 .signUp,.logIn {
     padding: 5px 5px; /* Reduced padding */
     border-radius: 10px; /* Reduced border radius */
-    background-color: #C0C0C0; /* White background color */
     color: #333; /* Dark text color */
     font-size: 12px; /* Reduced font size */
     text-decoration: none; /* Remove underline from links */
+    transform: translateY(25px);
+    color: #090909;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px #8300e5, -3px -3px 3px #8300e5;
+}
+
+.signUp:active,.logIn:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
 .logIn{

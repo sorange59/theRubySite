@@ -1,0 +1,283 @@
+header {
+	background-color: #100C08; /* Dark background color */
+	color: #8300e5; /* White text color */
+	display: flex;
+	align-items: center;
+	align-content: center;
+	padding: 10px; /* Reduced padding */
+	max-height: 70px; /* Reduced max height */
+	width: 100%;
+}
+
+.header-content {
+	flex: 1;
+	text-align: center;
+	flex-direction: column; /* Added for mobile responsiveness */
+}
+.hh2 {
+	font-size: 24px; /* Reduced font size */
+	margin-top: 5px; /* Reduced margin top */
+	letter-spacing: 3px;
+	margin-left: -10px; /* Reduced margin left */
+}
+
+.imgPrint {
+	max-width: 50px; /* Reduced max width */
+	margin-right: 10px; /* Reduced margin right */
+	padding: 5px; /* Reduced padding */
+	height: 5%;
+}
+.topButts {
+	display: flex;
+	justify-content: flex-end; /* Add this to space out the buttons evenly */
+	flex-wrap: wrap; /* Add this to wrap the buttons to the next line if necessary */
+	color: #fff; /* White text color for links */
+	font-weight: bold;
+	text-decoration: none; /* Remove underline from links */
+	padding: 5px 5px; /* Reduced padding */
+	transition: background-color 1s ease; /* Smooth transition for hover effect */
+	border-radius: 10px; /* Reduced border radius */
+	margin:  5px 5px; /* Reduced margin */
+	align-items: center;
+	width: 30%; /* Make the buttons take up the full width */
+	margin-top: 5px; /* Reduced margin top */
+}
+
+.topNames {
+	flex: 0 0 20%; /* Make each button take up 20% of the width */
+	color: #fff; /* White text color for links */
+	font-size: 17px; /* Reduced font size */
+	font-weight: bold;
+	text-decoration: none; /* Remove underline from links */
+	padding: 5px 5px; /* Reduced padding */
+	transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+	border-radius: 10px; /* Reduced border radius */
+	height: 35px;
+	margin-left: 20px; /* Reduced margin left to 5px */
+	text-align: center; /* Center the text within each button */
+	
+}
+.forms {
+	position: absolute;
+	right: 100px;
+	justify-content: flex-end;
+	display: flex;    
+	transform: translateY(-350%);
+	margin: 5px;
+	width: 25%;
+}
+/* Dropdown Menu Styles */
+
+.drpNames{
+	color: #000; /* White text color for links */
+	font-size: 10px; /* Reduced font size */
+	font-weight: bold;
+	text-decoration: none; /* Remove underline from links */
+	padding: 2px;
+	margin: auto;/* Reduced padding */
+	transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+	border-radius: 10px; /* Reduced border radius */
+	height: 25px;
+	margin-left: 70px; /* Reduced margin left */
+	cursor: pointer;
+	
+	
+	
+}
+ul {
+	list-style-type: none;
+}
+
+
+
+.dropbtn {
+	position: absolute;
+	right: 25px;
+	transform: translateY(-50%);
+	float: right;
+	color: #090909;
+	padding: 0.6em 1.5em;
+	font-size: 15px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	cursor: pointer;
+	border: 1px solid #e8e8e8;
+	transition: all 0.3s;
+	box-shadow: 3px 3px 3px #8300e5, -3px 3px 3px #8300e5;
+	
+	
+}
+
+.dropbtn:active {
+	color: #666;
+	box-shadow: inset 4px 4px 4px #c5c5c5, inset -4px -4px 4px #ffffff;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	padding: 12px 16px;
+	border: 1px solid #ccc;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+	right: 0; /* Position the dropdown content to the right of the screen */
+	top: 25%;
+	transform: translateY(-50%);
+	min-width: 200px;
+}
+.topDrop{
+	flex: 0 0 20%; /* Make each button take up 20% of the width */
+	color: #fff; /* White text color for links */
+	font-size: 17px; /* Reduced font size */
+	font-weight: bold;
+	text-decoration: none; /* Remove underline from links */
+	padding: 5px 5px; /* Reduced padding */
+	transition: background-color 0.4s ease; /* Smooth transition for hover effect */
+	border-radius: 10px; /* Reduced border radius */
+	height: 35px;
+	margin-left: 20px; /* Reduced margin left to 5px */
+	text-align: center; /* Center the text within each button */
+	
+}
+
+
+
+@media (max-width: 400px){
+	.dropbtn{
+		font-size: 10px;
+		padding: 0.3em 1em; 
+		right: 15px;
+		
+	}
+	.hh2{
+		font-size: 12px;
+		
+	}
+	
+}
+
+
+.dropdown-content.show {
+	display: block;
+	
+}
+
+.dropdown-content a {
+	color: black;
+}
+
+
+
+
+.dropdown:hover .dropbtn {
+	border-radius: 10px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+@media (min-width: 800px) /*a minimum size does this:*/ {
+	// .forms {
+	//     z-index: 1;
+	//     position: relative;
+	//     top: -5px;
+	// }
+	// .topButts {
+	//     margin-left: -45px;
+	// }
+	.drpNames{
+		display: none;
+	}
+	.dropbtn{
+		display: none;
+	}
+	//     header{
+	//         width: 100%;
+	//         
+	//     }
+	//     .hh2{
+	//         font-size: 15px;
+	//         margin-left: 1px;
+	//         
+	//     }
+	//         
+}
+
+
+
+
+@media (max-width: 800px)/* do this before the said size*/{
+	.hh2 {
+		font-size: 13px;
+		margin-left: 1px;
+	}
+	.signUp, .logIn {
+		padding: 5px 5px;
+		font-size: 5px;
+		display: none;
+	}
+	.topButts {
+		display: none; /* Hide top buttons on phone view */
+	}
+	.imgPrint{
+		max-width: 35px; /* Reduced max width */
+		margin-right: 10px; /* Reduced margin right */
+		padding: 3px; /* Reduced padding */
+		height: 4%;
+		
+	}
+	.header-content {
+		flex-direction: column;
+	}
+	.dropdown {
+		display: inline-block;
+	}
+	
+	.hh1{
+		font-size: 15px;
+		margin: 5px auto;
+		padding: 3px;
+		
+	}
+	.drpNames{
+		
+	}
+	
+}
+
+
+
+
+
+
+.signUp,.logIn {
+	padding: 5px 5px; /* Reduced padding */
+	border-radius: 10px; /* Reduced border radius */
+	color: #333; /* Dark text color */
+	font-size: 12px; /* Reduced font size */
+	text-decoration: none; /* Remove underline from links */
+	transform: translateY(25px);
+	color: #090909;
+	font-size: 18px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	cursor: pointer;
+	border: 1px solid #e8e8e8;
+	transition: all 0.3s;
+	box-shadow: 3px 3px 3px #8300e5, -3px -3px 3px #8300e5;
+}
+
+.signUp:active,.logIn:active {
+	color: #666;
+	box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.logIn{
+	margin-left: 10px; /* Reduced margin left */
+}
+
+.signUp:hover, .logIn:hover {
+	background-color: #ddd; /* Hover state background color */
+}
+

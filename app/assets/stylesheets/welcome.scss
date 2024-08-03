@@ -53,6 +53,7 @@ header {
     background-color: grey;
     width: 50%;
     margin-left: 25%;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -98,7 +99,7 @@ nav a:hover {
     right: 100px;
     justify-content: flex-end;
     display: flex;    
-    transform: translateY(-350%);
+    transform: translateY(-400%);
     margin: 5px;
     width: 25%;
 }
@@ -310,7 +311,7 @@ ul {
 }
 
 .logIn{
-    margin-left: 10px; /* Reduced margin left */
+    margin-left: 20px; /* Reduced margin left */
 }
 
 .signUp:hover, .logIn:hover {
@@ -320,10 +321,20 @@ ul {
 .bod{
     background-color: lightgrey;
     height: 100%;
+
 }
 
-// .pgaph{
-//     background-color: red;
-//     max-height: 100;
-//     
-// }
+ .pgaph{
+     background-color: grey;
+     max-height: 100;
+    padding: 10px;
+    margin-top: 100px
+
+ }
+
+ .foot{
+    margin-top: 100px;
+    padding: 15px;
+    background-color: lightgrey;
+
+ }

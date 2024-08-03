@@ -8,8 +8,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: lightgrey;
+    background-color: #242222;
     height: 100%;
+    margin-top: 100px;
+    
 }
 
 /* Header Styles */
@@ -21,8 +23,11 @@ header {
     align-items: center;
     align-content: center;
     padding: 10px; /* Reduced padding */
-    max-height: 70px; /* Reduced max height */
+    max-height: 100px; /* Reduced max height */
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin-top: -100px;
 }
 
 .header-content {
@@ -46,15 +51,22 @@ header {
 }
 
 .hh1 {
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-align: center;
-    font-size: 28px; /* Reduced font size */
+    font-size: 45px; /* Reduced font size */
     color: #8300e5;
+<<<<<<< HEAD
     background-color: grey;
     width: 50%;
     margin-left: 25%;
     margin-top: 20px;
     border-radius: 10px;
+=======
+    background-color: #242222;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+>>>>>>> refs/remotes/origin/main
 }
 
 .topButts {
@@ -98,8 +110,13 @@ nav a:hover {
     position: absolute;
     right: 100px;
     justify-content: flex-end;
+<<<<<<< HEAD
     display: flex;    
     transform: translateY(-400%);
+=======
+    display: flex;
+    top: -10px; /* Add this to position at the top of the screen */
+>>>>>>> refs/remotes/origin/main
     margin: 5px;
     width: 25%;
 }
@@ -189,7 +206,7 @@ ul {
         
     }
     .hh2{
-        font-size: 12px;
+        font-size: 20px;
         
     }
     
@@ -223,6 +240,7 @@ ul {
     // .topButts {
     //     margin-left: -45px;
     // }
+    
     .drpNames{
         display: none;
     }
@@ -272,14 +290,35 @@ ul {
     }
     
     .hh1{
-        font-size: 15px;
+        font-size: 20px;
         margin: 5px auto;
         padding: 3px;
+        margin-top: -20px;
+        width: 100%;
         
+    }
+    header{
+        margin-top: -80px;
     }
     .drpNames{
         
     }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        grid-column: 1 / -1; /* Take up full width */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+    .card img {
+        height: 200px;
+    }
+    .card h2 {
+        font-size: 16px;
+    }
+    
+
+    
 
 }
 
@@ -319,11 +358,12 @@ ul {
 }
 
 .bod{
-    background-color: lightgrey;
+    background-color: #242222;
     height: 100%;
 
 }
 
+<<<<<<< HEAD
  .pgaph{
      background-color: grey;
      max-height: 100;
@@ -338,3 +378,49 @@ ul {
     background-color: lightgrey;
 
  }
+=======
+// .pgaph{
+//     background-color: red;
+//     max-height: 100;
+//     
+// }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    background-color: #242222;
+    
+    padding: 30px;
+}
+
+.card {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    box-shadow:  10px 5px 10px #8300e5;
+    
+}
+
+.card:active {
+    transform: scale(1) rotateZ(.7deg);
+}
+
+.card h2 {
+    font-size: 18
+}
+>>>>>>> refs/remotes/origin/main

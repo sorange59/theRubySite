@@ -2,6 +2,8 @@
 
 <html lang="en">
 <%= stylesheet_link_tag "welcome", media: 'all' %>
+<%= stylesheet_link_tag "userWelcome", media: 'all' %>
+
 <%= csrf_meta_tags %>
 
 <head>
@@ -12,8 +14,10 @@
 
 <body>
     <header>
+    <%= image_tag 'print.png', class: 'imgPrint' %>
+    <h1 class="hh2">ECHELON SURVEILLANCE</h1>
 
-        <h1 class="userWelcome">Welcome, <%= @user.username %> </h1>
+
 
 
 
@@ -26,14 +30,19 @@
 
 
     </header>
+    <h3 class="userWelcome">Welcome, <%= @user.username %> </h3>
 
-    <main>
-        <p>This is the home page!</p>
-        <p>Welcome to home!</p>
+<%= image_tag 'dog.jpg', class: 'imgDog' %>
+
+
+    <main class="mains">
+        <p>Look at this picture of my dog!</p>
+        <p>                  </p>
+        <p>Welcome to homePage!</p>
     </main>
 
     <footer>
-        <p>Signed in as, <%= @user.username %></p>
+        <p class="feetThing">Signed in as, <%= @user.username %></p>
     </footer>
 </body>
 
